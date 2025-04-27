@@ -1,0 +1,1 @@
+This codes is for a resume highling three of your relevant or most recent work/experience necessary to get a cloud career started. It includes css and html codes together with Java Scripts to add visitor timer on the webpage. 
