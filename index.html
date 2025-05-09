@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #00FF7F; 
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00FF7F; 
+  border-radius: 5px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+</style>
+
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+<style>
+body {
+  background-color: white;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<img src="https://media.licdn.com/dms/image/v2/D4E03AQGaLe3CCjdOAQ/profile-displayphoto-shrink_400_400/B4EZZ1bG8yHMAg-/0/1745726763167?e=1751500800&v=beta&t=AUyjFWmljFL4vy0RAKuBX9q7gwHrv37h1g18d3Xw3eU" alt="Paris" style="width:10%;">
+
+<section>
+  <h1>Michael Buabeng</h1>
+</section>
+
+<div class="section">
+  <h5>phone: 703-640-4003; email: mobuabeng86@gmail.com; <a href="www.linkedin.com/in/gethelpersllc">linkedin page</a></h5>
+</div>
+
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+
+<div class="section">
+  <h4>Skills</h4>
+  <ul style="list-style: none;">
+    <li>Network Setup | AWS (EC2, S3, IAM, CloudWatch)</li>
+    <li>Microsoft Office | Cloud Specialist | Management | Windows</li>
+    <li>Graphic Design | Adobe Photoshop | Vendor Coordination | Organizational Skills</li>
+    <li>Creative & Digital: Web Design | Management</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h4>Experience</h4>
+
+  <div class="section">
+    <h4>Claim Agent / SME Mentor - TTec</h4>
+    <h4>Apr 2024 - Present</h4>
+    <ul style="list-style: none;">
+      <li>Promoted to Subject Matter Expert within 6 months due to high performance.</li>
+      <li>Processed and troubleshot insurance claims using cloud-based tools.</li>
+      <li>Resolved escalated cases and refined internal processes for better turnaround time.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h4>Ops Manager / Lead Technician - Get Helpers, LLC</h4>
+    <h4>May 2016 - Present</h4>
+    <ul style="list-style: none;">
+      <li>Managed in-home IT services including hardware upgrades and network setup.</li>
+      <li>Led business operations: job bookings, dispatch, budgeting, client relations.</li>
+      <li>Increased lead flow through strategic digital and social media marketing campaigns.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h4>Call Agent - Working Solutions / Sabre</h4>
+    <h4>Jun 2022 - Apr 2025</h4>
+    <ul style="list-style: none;">
+      <li>Ranked top 5 agent for 12 months; handled escalations in travel and hotel bookings.</li>
+      <li>Delivered support through cloud-based platforms and CRM systems.</li>
+      <li>Assisted customers with booking, refund processes, and technical platform issues.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h4>Administrative Coordinator - Secure Integrated Technologies</h4>
+    <h4>Jun 2019 - Mar 2021</h4>
+    <ul style="list-style: none;">
+      <li>Coordinated IT vendor communication and managed security system workflows.</li>
+      <li>Scheduled executive meetings and documented technical procedures.</li>
+      <li>Handled inventory and financial records of tech equipment.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h4>Certifications & Licenses</h4>
+    <ul style="list-style: none;">
+      <li>AWS Cloud Practitioner Certificate</li>
+    </ul>
+  </div>
+
+</div>
+
+<p>visitor count: <span id="visitor-count"></span></p>
+<script>
+  fetch('https://bwteocrd39.execute-api.us-east-1.amazonaws.com/visitor_count/visitorcounter')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('visitor-count').textContent = data.visitor_count;
+    })
+    .catch(error => {
+      console.error('API error:', error);
+      document.getElementById('visitor-count').textContent = 'Error loading count';
+    });
+</script>
+
+
+
+</body>
+</html>
