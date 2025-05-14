@@ -31,7 +31,7 @@ jobs:
         args: --acl public-read --delete
       env:
         AWS_S3_BUCKET: www.gethelpers.net
-        AWS_ACCESS_KEY_ID: ${{ secrets.AKIAXF7GMTODBO2PHFOP }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.ew8F+loawZRVHnvVVLh3KEjX/YBJVt93Hyf9ZyI8 }}
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: us-east-1
         SOURCE_DIR: build
